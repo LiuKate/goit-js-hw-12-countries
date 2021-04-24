@@ -26,10 +26,10 @@ function renderQueryMarkup(evt) {
             } else {
              error({
                  text: 'Too many matches found. Please enter a more specific query',
-                
+            
              })
            }    
-        })     
+        }).catch(error => console.log(error))     
 }
 
 
